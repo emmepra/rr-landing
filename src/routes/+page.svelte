@@ -10,7 +10,7 @@
 
 	import Hero from '$lib/components/parts/Hero.svelte';
 	import Hero2 from '$lib/components/parts/Hero2.svelte';
-	import Pricing from '$lib/components/parts/Pricing.svelte';
+	import Price from '$lib/components/parts/Price.svelte';
 	import Team from '$lib/components/parts/Team.svelte';
 	import Customers from '$lib/components/parts/Customers.svelte';
 	import Header from '$lib/components/layout/Header.svelte';
@@ -29,7 +29,7 @@
 <!--	- dentro ad ogni <nomechart>Chart.svelte va inserito il chart base <nomechart>.svelte -->
 
 <Hero2 />
-<Pricing />
+<Price />
 <Team />
 <Customers />
 <Newsletter />
