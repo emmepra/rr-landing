@@ -4,7 +4,6 @@
     import Footer from "$lib/components/layout/Footer.svelte";
     import Analytics from "$lib/components/layout/Analytics.svelte";
     import Meta from "$lib/components/layout/Meta.svelte";
-
 </script>
 
 <Analytics />

@@ -8,6 +8,8 @@
 	import * as cfg from '$lib/utils/config.js';
 	import { onMount } from 'svelte';
 
+	import Pricing from '$lib/components/parts/Pricing.svelte';
+
 </script>
 
 <!-- NOTE -->
@@ -17,3 +19,5 @@
 <!--	- inserirgli dentro un div con class w-[Npx] e h-[Npx] in cui specificare le dimensioni del chart -->
 <!--	- inserire a sua volta il chart richiamando il component <nomechart>Chart.svelte contenuto in: <div class="w-full h-full"> -->
 <!--	- dentro ad ogni <nomechart>Chart.svelte va inserito il chart base <nomechart>.svelte -->
+
+<Pricing />

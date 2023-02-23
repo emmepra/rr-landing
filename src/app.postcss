@@ -6,66 +6,17 @@
 
 body {
 	@apply font-sans;
-	@apply bg-primary;
+	@apply bg-primary-50;
 	letter-spacing: -0.016em;
 }
 
-.highlight-blue {
-	@apply bg-blue-300/50;
-	@apply underline;
-	@apply decoration-blue-700/50;
-	@apply underline-offset-2;
-	@apply decoration-2;
-	@apply text-blue-700/80;
-	@apply rounded-md;
-	@apply p-1;
-	@apply font-semibold;
-}
-
-.highlight-green {
-	@apply bg-green-300/50;
-	@apply underline;
-	@apply decoration-green-700/50;
-	@apply underline-offset-2;
-	@apply decoration-2;
-	@apply text-green-700/80;
-	@apply rounded-md;
-	@apply p-1;
-	@apply font-semibold;
-}
-
-.highlight-ginger {
-	@apply bg-orange-300/50;
-	@apply underline;
-	@apply decoration-orange-700/50;
-	@apply underline-offset-2;
-	@apply decoration-2;
-	@apply text-orange-700/80;
-	@apply rounded-md;
-	@apply p-1;
-	@apply font-semibold;
-}
-
-.highlight-red {
-	@apply bg-red-300/50;
-	@apply underline;
-	@apply decoration-red-700/50;
-	@apply underline-offset-2;
-	@apply decoration-2;
-	@apply text-red-700/80;
-	@apply rounded-md;
-	@apply p-1;
-	@apply font-semibold;
-}
-
 ::selection {
-	@apply bg-main-lighter text-white;
+	@apply bg-primary-50 text-white;
 }
 
 h1 {
 	@apply text-6xl;
 	@apply font-black; /* definisce solamente il peso del font */
-	@apply text-secundary;
 	margin-bottom: 0.3em;
 }
 
@@ -82,12 +33,10 @@ h3 {
 }
 
 a {
-	@apply text-main;
 	@apply underline;
 }
 
 button {
-	@apply bg-main;
 	@apply text-white;
 	@apply font-semibold;
 	padding: 0.5em 1em;
@@ -97,7 +46,6 @@ button {
 
 button:hover,
 button:focus {
-	@apply bg-main-dark;
 	border-width: 0;
 	transform: translate(0.25rem, 0.25rem);
 	box-shadow: #3f5740 1px 1px 0;
@@ -131,7 +79,6 @@ svelte-scroller-background-container {
 	@apply text-center;
 	@apply shadow-sm;
 	@apply border;
-	@apply border-secundary/5;
 
 	position: relative;
 }
@@ -200,7 +147,6 @@ svelte-scroller-background-container {
 		@apply max-w-fit;
 		@apply shadow-sm;
 		@apply border;
-		@apply border-secundary/5;
 		/* @apply max-w-sm; */
 	}
 }
@@ -210,7 +156,6 @@ svelte-scroller-background-container {
 .label {
 	position: absolute;
 	@apply text-sm;
-	@apply text-secundary/90;
 	/* @apply bg-primary; */
 	/* @apply bg-opacity-90; */
 }
@@ -227,6 +172,5 @@ svelte-scroller-background-container {
 .label-title {
 	font-weight: bold;
 	@apply pt-2;
-	@apply text-secundary;
 	@apply text-sm;
 }

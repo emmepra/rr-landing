@@ -1,29 +1,61 @@
 const config = {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
-	theme: {
-		extend: {
-			colors: {
-				'main-lighter': '#c7e4d0',
-				'main-light': '#a1cfa9',
-				main: '#78a77E',
-				'main-dark': '#5c7f5f',
-				'main-darker': '#3f5740',
-				primary: '#f7f2ea',
-				secundary: '#282828',
-				'womred': '#b2182b',
-				'manblue': '#2166ac',
-			},
-			fontFamily: {
-				sans: ['Public Sans', 'sans-serif'],
-				serif: ['Lora'],
-				mono: ['JetBrains Mono']
-			}
-		}
-	},
-
-	plugins: [
-		require('tailwindcss-textshadow'),
-	]
+  content: ["./src/**/*.{html,js,svelte,ts}"],
+  darkMode: 'class', // or 'media' or 'class'
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: "#eff6ff",
+          100: "#dbeafe",
+          200: "#bfdbfe",
+          300: "#93c5fd",
+          400: "#60a5fa",
+          500: "#3b82f6",
+          600: "#2563eb",
+          700: "#1d4ed8",
+          800: "#1e40af",
+          900: "#1e3a8a",
+        },
+      },
+    },
+    fontFamily: {
+      body: [
+        "Inter",
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "system-ui",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji",
+      ],
+      sans: [
+        "Inter",
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "system-ui",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji",
+      ],
+    },
+  },
+  plugins: [require("tailwindcss-textshadow")],
 };
 
 module.exports = config;
